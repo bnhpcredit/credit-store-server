@@ -26,4 +26,8 @@ public class ProductsController {
 		
 	}
 	
+	@GetMapping("/sanity")
+	public String sanity() {
+		return "sanity";
+	}
 }
