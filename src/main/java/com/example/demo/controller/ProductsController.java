@@ -16,7 +16,11 @@ public class ProductsController {
 	 @Value("${mongodb.uri}") 
 	 private String mongoConnectionUri;
 	 
-	
+	 @GetMapping(value = "health-check")
+	 public Integer getHealthCheck() {
+		return 1;
+	 }
+	 
 	@GetMapping()
 	public Long getNumOfProducts() {
 	
