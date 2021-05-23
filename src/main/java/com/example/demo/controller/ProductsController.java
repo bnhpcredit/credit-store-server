@@ -1,28 +1,22 @@
 package com.example.demo.controller;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.time.LocalDate;
 import java.util.UUID;
 
-import javax.websocket.server.PathParam;
-
-import com.example.demo.data.Card;
 import com.example.demo.data.CardOffer;
-import com.example.demo.data.CreditLimit;
 import com.example.demo.data.CreditLimitOffer;
-import com.example.demo.data.DigitalGuarantee;
 import com.example.demo.data.DigitalGuaranteeOffer;
 import com.example.demo.data.LoanOffer;
 import com.example.demo.data.ProductOffers;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("products")
