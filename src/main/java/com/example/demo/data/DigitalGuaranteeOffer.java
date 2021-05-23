@@ -8,13 +8,9 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data()
-public class Loan extends Product {
+@Data
+public class DigitalGuaranteeOffer extends ProductOffer {
     Double amount;
-    Double rate;
-    Integer numberOfPayments;
     LocalDate startDate;
     LocalDate endDate;
-    LocalDate firstPaymentDate;
-    Double monthlyPayment;
 }

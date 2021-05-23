@@ -6,15 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 @AllArgsConstructor
-@Data()
-public class Loan extends Product {
+@NoArgsConstructor
+@Data
+public class CreditLimitOffer extends ProductOffer {
     Double amount;
-    Double rate;
-    Integer numberOfPayments;
     LocalDate startDate;
     LocalDate endDate;
-    LocalDate firstPaymentDate;
-    Double monthlyPayment;
 }

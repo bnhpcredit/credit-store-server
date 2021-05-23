@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Card extends Product {
-    CreditLimit limit;
+public class CardOffer extends ProductOffer {
+    CreditLimitOffer limit;
 }
