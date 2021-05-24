@@ -1,11 +1,13 @@
 package com.example.demo.data;
 
+import java.util.List;
+
 import lombok.Data;
 
 @Data
 public class ProductOffers {
-    LoanOffer[] loanOffers;
-    CreditLimitOffer[] creditLimitOffers;
-    CardOffer[] cardOffers;
-    DigitalGuaranteeOffer[] digitalGuaranteeOffers;
+    List<LoanOffer> loanOffers;
+    List<CreditLimitOffer> creditLimitOffers;
+    List<CardOffer> cardOffers;
+    List<DigitalGuaranteeOffer> digitalGuaranteeOffers;
 }
