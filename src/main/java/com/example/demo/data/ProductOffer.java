@@ -7,9 +7,8 @@ public class ProductOffer {
     String id; //uuid
     Integer productType; // e.g loan/credit card/credit limit...
     String productTypeName;
+    String productTypeDescription;
     Integer productSubType; //Enum?
     String productSubTypeName; // Enum?
     String productSubTypeDescription;
-
-    
 }

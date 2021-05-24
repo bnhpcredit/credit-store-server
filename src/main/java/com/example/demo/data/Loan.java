@@ -13,8 +13,10 @@ public class Loan extends Product {
     Double amount;
     Double rate;
     Integer numberOfPayments;
-    LocalDate startDate;
-    LocalDate endDate;
     LocalDate firstPaymentDate;
     Double monthlyPayment;
+    Integer amortizationType;
+    Integer loanPurpose;
+    LocalDate startDate;
+    LocalDate endDate;
 }
